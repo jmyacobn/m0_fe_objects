@@ -6,54 +6,64 @@
 // file in your Terminal.
 
 foods = {
-  apples: 23, 
-  grapes: 507, 
+  apples: 23,
+  grapes: 507,
   eggs: 48
 }
 
-// Write code that prints all of the 'keys' of the foods variable 
+// Write code that prints all of the 'keys' of the foods variable
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(foods))
 
-// Write code that prints all of the 'values' of the foods variable 
+// Write code that prints all of the 'values' of the foods variable
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(foods))
 
-// Write code that prints the value of the second food of the foods variable 
+// Write code that prints the value of the second food of the foods variable
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(foods)[1])
 
-// Write code that adds a food to the foods object. 
+// Write code that adds a food to the foods object.
 // Then, print the updated object:
-// YOUR CODE HERE
+console.log(foods.kiwi = 200);
 
+//Ran line below to be sure kiwi was added! :)
+console.log(Object.keys(foods))
 
-#-------------------
+//#-------------------
 // Part 2: Email
-#-------------------
+//#-------------------
 
 
 // Think about all the pieces of information associated with one single email in your inbox.
 // It has a sender, a subject, ...
-
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+var email1 = {
+  sender: "jaycoubian@gmail.com",
+  dateSent: "June 9, 2022",
+  timeSent: "12:03 pm",
+  subject: "Order Status",
+  body: "Good morning, I have not yet received the item that I orded. Can you please advise? Thank you, Jenn",
+  replied: true
+}
+
 // Write code that logs your email object to the terminal.
+console.log(email1)
 
-
-// Write code that logs all of the 'keys' of the email object 
+// Write code that logs all of the 'keys' of the email object
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(email1));
 
-// Write code that logs all of the 'values' of the email object 
+// Write code that logs all of the 'values' of the email object
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(email1));
 
 
-#-------------------
+//#-------------------
 // Part 3: Many Emails - CHALLENGE!
-#-------------------
+//#-------------------
 
 // LONG EXAMPLE:
 // Now that we've learned about Objects AND Arrays, we can combine them.
@@ -76,7 +86,7 @@ posts = [
     timestamp: "4:37 PM August 13, 2019",
     number_likes: 0,
     comments: []
-  }, 
+  },
   {
     imageSrc: "./images/holiday-party.png",
     caption: "What a great holiday party omg",
@@ -90,12 +100,41 @@ console.log(posts);
 console.log(posts[0]);
 
 
-// The code snippet above shows an Array with 2 elements. Each element in the Array is a 
-// Objects. Each of those Objects has 4 key-value pairs. This may LOOK 
+// The code snippet above shows an Array with 2 elements. Each element in the Array is a
+// Objects. Each of those Objects has 4 key-value pairs. This may LOOK
 // a bit daunting - it's OK! You don't need to be 100% comfortable with this, but it's
 // good to have some exposure before going into Mod 1.
 
 
-// YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
+// YOU DO: Create an array of at least 3 EMAIL Objects, using the same
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    sender: "jaycoubian@gmail.com",
+    dateSent: "June 9, 2022",
+    timeSent: "12:03 pm",
+    subject: "Order Status",
+    body: "Good morning, I have not yet received the item that I orded. Can you please advise? Thank you, Jenn",
+    replied: true
+  },
+  {
+    sender: "mmyacoubian@yahoo.com",
+    dateSent: "June 2, 2022",
+    timeSent: "2:15 pm",
+    subject: "Trip to CA",
+    body: "Hey Jenn, I booked our hotels for both Napa Valley and Santa Rosa. I put the amounts in the SplitWise app, so you know what you owe me. Melissa",
+    replied: true
+  },
+  {
+    sender: "darren@turing.edu",
+    dateSent: "June 3, 2022",
+    timeSent: "10:44 am",
+    subject: "Turing School Scholarship Application",
+    body: "Hello! I’d like to thank you for applying for the 2207 Turing School of Software & Design Diversity Scholarship. I regret to inform you that you were not selected to receive an award. Turing School received many strong applications this round. We had a very difficult time selecting scholarship recipients for this cohort because of the passion and need of each candidate. We are looking forward to having you here at Turing next month, and we are excited to be part of this next stage in your journey. Thank you for sharing your story with us. We look forward to helping you achieve your dreams.",
+    replied: false
+  }
+];
+
+console.log(emails);
